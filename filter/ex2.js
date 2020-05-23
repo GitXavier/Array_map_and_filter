@@ -26,6 +26,17 @@ Expected OUTPUT for this sample:
 */
 
 function keepStarks(names) {
+
+  const starkFamily = names.filter(name => {
+
+    if (name.split(' ')[1] === "Stark") {
+      return name;
+    }
+
+  });
+
+  return starkFamily;
+
 }
 
 // DON'T TOUCH THIS!

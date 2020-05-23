@@ -27,6 +27,14 @@ Expected OUTPUT for this sample array:
 */
 
 function getStringsLength(strings) {
+
+  const result = strings.map(animal => {
+
+    return animal + ' contains ' + animal.length + ' characters';
+  })
+
+  return result;
+
 }
 
 // If you need, you can always visualize the result with a console.log.
